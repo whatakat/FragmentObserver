@@ -20,4 +20,9 @@ public class Fragment2 extends Fragment implements Observer {
         textView = view.findViewById(R.id.textView2);
         return view;
     }
+
+    @Override
+    public void updateText(String text) {
+        textView.setText(text);
+    }
 }
